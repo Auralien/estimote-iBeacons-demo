@@ -13,6 +13,10 @@
 		504AE5891B10686500C2FF41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504AE5881B10686500C2FF41 /* Images.xcassets */; };
 		504AE58C1B10686500C2FF41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504AE58A1B10686500C2FF41 /* LaunchScreen.xib */; };
 		504AE5981B10686500C2FF41 /* MaxBeaconsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504AE5971B10686500C2FF41 /* MaxBeaconsTestTests.swift */; };
+		504AE5A21B10688E00C2FF41 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504AE5A11B10688E00C2FF41 /* EstimoteSDK.framework */; };
+		504AE5A41B1068CD00C2FF41 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504AE5A31B1068CD00C2FF41 /* CoreLocation.framework */; };
+		504AE5A61B1068D200C2FF41 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504AE5A51B1068D200C2FF41 /* CoreBluetooth.framework */; };
+		504AE5A81B1068E000C2FF41 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504AE5A71B1068DF00C2FF41 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,11 @@
 		504AE5911B10686500C2FF41 /* MaxBeaconsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxBeaconsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		504AE5961B10686500C2FF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		504AE5971B10686500C2FF41 /* MaxBeaconsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxBeaconsTestTests.swift; sourceTree = "<group>"; };
+		504AE5A11B10688E00C2FF41 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
+		504AE5A31B1068CD00C2FF41 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		504AE5A51B1068D200C2FF41 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		504AE5A71B1068DF00C2FF41 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		504AE5AA1B106FFF00C2FF41 /* ObjCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504AE5A81B1068E000C2FF41 /* SystemConfiguration.framework in Frameworks */,
+				504AE5A61B1068D200C2FF41 /* CoreBluetooth.framework in Frameworks */,
+				504AE5A41B1068CD00C2FF41 /* CoreLocation.framework in Frameworks */,
+				504AE5A21B10688E00C2FF41 /* EstimoteSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				504AE57E1B10686500C2FF41 /* MaxBeaconsTest */,
+				504AE5A91B1068E400C2FF41 /* Frameworks */,
 				504AE5941B10686500C2FF41 /* MaxBeaconsTestTests */,
 				504AE57D1B10686500C2FF41 /* Products */,
 			);
@@ -80,8 +94,6 @@
 				504AE5811B10686500C2FF41 /* AppDelegate.swift */,
 				504AE5831B10686500C2FF41 /* ViewController.swift */,
 				504AE5851B10686500C2FF41 /* Main.storyboard */,
-				504AE5881B10686500C2FF41 /* Images.xcassets */,
-				504AE58A1B10686500C2FF41 /* LaunchScreen.xib */,
 				504AE57F1B10686500C2FF41 /* Supporting Files */,
 			);
 			path = MaxBeaconsTest;
@@ -90,7 +102,10 @@
 		504AE57F1B10686500C2FF41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				504AE5881B10686500C2FF41 /* Images.xcassets */,
+				504AE58A1B10686500C2FF41 /* LaunchScreen.xib */,
 				504AE5801B10686500C2FF41 /* Info.plist */,
+				504AE5AA1B106FFF00C2FF41 /* ObjCBridge.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +125,17 @@
 				504AE5961B10686500C2FF41 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		504AE5A91B1068E400C2FF41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				504AE5A71B1068DF00C2FF41 /* SystemConfiguration.framework */,
+				504AE5A51B1068D200C2FF41 /* CoreBluetooth.framework */,
+				504AE5A31B1068CD00C2FF41 /* CoreLocation.framework */,
+				504AE5A11B10688E00C2FF41 /* EstimoteSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,9 +366,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MaxBeaconsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MaxBeaconsTest/ObjCBridge.h;
 			};
 			name = Debug;
 		};
@@ -350,9 +381,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MaxBeaconsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MaxBeaconsTest/ObjCBridge.h;
 			};
 			name = Release;
 		};
